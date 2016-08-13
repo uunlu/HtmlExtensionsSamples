@@ -1,4 +1,4 @@
-# HtmlExtensionsSamples
+# Html Extensions Samples
 <b>Asp.NET MVC Html Extensions Samples</b>
 
 <h4>-> Go to Components Folder</h4>
