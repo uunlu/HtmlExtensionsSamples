@@ -1,7 +1,13 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>Html Extensions Examples</h2>
+<h3>Html.Image</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>Messi's Goal Celebration</p>
+<div class="row">
+    <div class="col-md-6">
+        @Html.Image("https://usatthebiglead.files.wordpress.com/2016/02/gettyimages-511888504.jpg",
+       "Messi Scoring", "img-responsive img-rounded", new { data_action="create-item"})
+    </div>
+</div>
