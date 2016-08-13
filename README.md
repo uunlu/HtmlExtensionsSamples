@@ -9,8 +9,8 @@
  <li> Create clean code on view
 </ul>
 
+---------------------------
 <h4>-> Go to Components Folder</h4>
-<br/>
 You can see Html Helper method samples in this folder. 
 
 <h4>-> HtmlExtensionsImage: </h4>
