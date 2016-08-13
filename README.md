@@ -21,3 +21,7 @@ Helper.Image("imagelink", "alt", new { class ="img-responsive" } )
 <br/>
 <br/>
 There are different overload methods available. 
+
+<h4>-> HtmlExtensionsButton: </h4>
+
+Custom bootstrap button helper extensions.
