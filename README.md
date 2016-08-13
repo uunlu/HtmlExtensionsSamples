@@ -9,7 +9,7 @@ You can see Html Helper method samples in this folder.
 
 Usage Example: 
 <br/>
-Helper.Image("imagelink", "alt", new{ class ="img-responsive"})
+Helper.Image("imagelink", "alt", new { class ="img-responsive"} )
 <br/>
 <br/>
 There are different overload methods available. 
