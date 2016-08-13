@@ -70,13 +70,7 @@ namespace HtmlExtensions
                 tb.AddCssClass(cssClass);
             }
 
-
-            if (!string.IsNullOrEmpty(name))
-            {
-                name = TagBuilder.CreateSanitizedId(name);
-                tb.GenerateId(name);
-                tb.MergeAttribute("name", name);
-            }
+            HmlExtensionsCommon.AddName(tb, name, "");
 
             if(htmlAttributes!=null)
             {
