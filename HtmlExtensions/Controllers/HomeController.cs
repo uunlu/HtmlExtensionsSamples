@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HtmlExtensions.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +17,12 @@ namespace HtmlExtensions.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
-            return View();
+            var player = new Player
+            {
+                 Name = "Messi",
+                 Team = "FC Barcelona"
+            };
+            return View(player);
         }
 
         public ActionResult Contact()

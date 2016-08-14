@@ -15,6 +15,24 @@ namespace HtmlExtensions
             reset
         }
 
+        public enum InputTypes
+        {
+            text,
+            color,
+            date,
+            datetime,
+            email,
+            month,
+            number,
+            search,
+            range,
+            tel,
+            time,
+            url,
+            week,
+            password
+        }
+
         public static void AddName(TagBuilder tb, 
             string name, 
             string id)

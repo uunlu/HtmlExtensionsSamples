@@ -167,9 +167,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Components\ExpressionHelpers.cs" />
     <Compile Include="Components\HmlExtensionsCommon.cs" />
     <Compile Include="Components\HmlExtensionsButton.cs" />
     <Compile Include="Components\HtmlExtensionsImage.cs" />
+    <Compile Include="Components\HtmlExtensionsTextBox.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -179,6 +181,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
