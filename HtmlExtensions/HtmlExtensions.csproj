@@ -170,6 +170,7 @@
     <Compile Include="Components\ExpressionHelpers.cs" />
     <Compile Include="Components\HmlExtensionsCommon.cs" />
     <Compile Include="Components\HmlExtensionsButton.cs" />
+    <Compile Include="Components\HtmlExtensionsCheckBox.cs" />
     <Compile Include="Components\HtmlExtensionsImage.cs" />
     <Compile Include="Components\HtmlExtensionsTextBox.cs" />
     <Compile Include="Controllers\AccountController.cs" />

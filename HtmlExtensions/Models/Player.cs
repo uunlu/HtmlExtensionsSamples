@@ -11,5 +11,6 @@ namespace HtmlExtensions.Models
         public string Name { get; set; }
         [Display(Name = "Manschaft")]
         public string Team { get; set; }
+        public bool IsActive { get; set; }
     }
 }

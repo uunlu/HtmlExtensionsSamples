@@ -12,24 +12,27 @@
        "Messi Scoring", "img-responsive img-rounded", new { data_action="create-item"})
     </div>
 </div>
-<form>
+<form class="form-inline">
     <div class="">
         <div class="row">
             <div class="col-md-2 form-group">
-                @Html.FormFieldTextBoxFor(x => x.Name, HtmlExtensions.HmlExtensionsCommon.InputTypes.text, new { @class = "form-control" })
+                @Html.FormFieldTextBoxFor(x => x.Name, HmlExtensionsCommon.InputTypes.text, new { @class = "form-control" })
             </div>
         </div>
         <div class="row">
             <div class="col-md-2 form-group">
-                @Html.FormFieldTextBoxFor(x => x.Team, HtmlExtensions.HmlExtensionsCommon.InputTypes.text, new { @class = "form-control" })
+                @Html.FormFieldTextBoxFor(x => x.Team, HmlExtensionsCommon.InputTypes.text, new { @class = "form-control" })
             </div>
         </div>
+        @Html.CustomCheckBoxFor(x=>x.IsActive, "Is Active")
         <div class="row">
             <div class="col-md-2">
                 @Html.CustomButton("<i class='fa fa-universal-access' aria-hidden='true'></i> Click Here", "btn-danger", "my-button", "cool button",
        true, true, HmlExtensionsCommon.ButtonTypes.reset)
             </div>
         </div>
+
+        
     </div>
 </form>
 
