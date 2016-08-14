@@ -25,3 +25,14 @@ There are different overload methods available.
 <h4>-> HtmlExtensionsButton: </h4>
 
 Custom bootstrap button helper extensions.
+
+<h4>-> HtmlExtensionsTextBox: </h4>
+
+Custom bootstrap textbox and form field helper extensions.
+
+Usage Example: 
+<br/>
+@Html.FormFieldTextBoxFor(x => x.Team, HtmlExtensions.HmlExtensionsCommon.InputTypes.text, new { @class = "form-control" })
+
+<b>FormFieldTextBoxFor </b> adds TextBox with Label in Bootstrap style.
+Label value is read from expression property name or Custom Data Attribute if exists. 
