@@ -28,9 +28,41 @@ namespace HtmlExtensions
             return InputExtensions.TextBoxFor(htmlHelper, expression, rvd);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TModel"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="htmlHelper"></param>
+        /// <param name="expression">lambda expression for model</param>
+        /// <param name="type">select input type e.g.: reset, submit...</param>
+        /// <param name="htmlAttributes">Add custom attributes to textbox</param>
+        /// <returns></returns>
+        public static MvcHtmlString FormFieldTextBoxFor<TModel, TValue>(
+          this HtmlHelper<TModel> htmlHelper,
+          Expression<Func<TModel, TValue>> expression,
+          HmlExtensionsCommon.InputTypes type = HmlExtensionsCommon.InputTypes.text,
+          object htmlAttributes = null
+          )
+        {
+            return FormFieldTextBoxFor(htmlHelper, expression, null);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TModel"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="htmlHelper"></param>
+        /// <param name="expression">lambda expression for model</param>
+        /// <param name="cssClassForLabel">custom CSS for label</param>
+        /// <param name="type">select input type e.g.: reset, submit...</param>
+        /// <param name="htmlAttributes">Add custom attributes to textbox</param>
+        /// <returns></returns>
         public static MvcHtmlString FormFieldTextBoxFor<TModel, TValue>(
             this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, TValue>> expression,
+            string cssClassForLabel,
             HmlExtensionsCommon.InputTypes type = HmlExtensionsCommon.InputTypes.text,
             object htmlAttributes = null
             )
@@ -41,7 +73,11 @@ namespace HtmlExtensions
             // set label text from its name or data attribute value
             var modelName = ExpressionHelpers.MemberName(expression);
             tb.SetInnerText(modelName);
-            tb.AddCssClass("form-inline");
+
+            if (string.IsNullOrWhiteSpace(cssClassForLabel))
+                tb.AddCssClass("form-inline");
+            else
+                tb.AddCssClass(cssClassForLabel);
 
             rvd = new RouteValueDictionary(HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
             rvd.Add("type", type.ToString());
