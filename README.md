@@ -36,3 +36,7 @@ Usage Example:
 
 <b>FormFieldTextBoxFor </b> adds TextBox with Label in Bootstrap style.
 Label value is read from expression property name or Custom Data Attribute if exists. 
+
+<h4>-> HtmlExtensionsCheckBox: </h4>
+
+Custom bootstrap style checkbox extensions.
