@@ -40,3 +40,11 @@ Label value is read from expression property name or Custom Data Attribute if ex
 <h4>-> HtmlExtensionsCheckBox: </h4>
 
 Custom bootstrap style checkbox extensions.
+
+<h4>-> HtmlExtensionsImageBox: </h4>
+
+Bootstrap customizable image box. 
+
+Usage Example:
+<br/>
+@Html.ImageBoxFor(x => x.Image, "", "logo-barca", true, HmlExtensionsCommon.ImageTypes.roundedCorners, new { @title="Barcelona City"})
