@@ -172,6 +172,7 @@
     <Compile Include="Components\HmlExtensionsButton.cs" />
     <Compile Include="Components\HtmlExtensionsCheckBox.cs" />
     <Compile Include="Components\HtmlExtensionsImage.cs" />
+    <Compile Include="Components\HtmlExtensionsImageBox.cs" />
     <Compile Include="Components\HtmlExtensionsTextBox.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

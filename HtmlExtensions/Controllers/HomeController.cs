@@ -19,8 +19,9 @@ namespace HtmlExtensions.Controllers
             ViewBag.Message = "Your application description page.";
             var player = new Player
             {
-                 Name = "Messi",
-                 Team = "FC Barcelona"
+                Name = "Messi",
+                Team = "FC Barcelona",
+                Image = "http://gayguidebarcelona.es/wp-content/uploads/2015/08/90-La-Sagrada-Familia-Barcelona.jpg"
             };
             return View(player);
         }

@@ -33,6 +33,14 @@ namespace HtmlExtensions
             password
         }
 
+        public enum ImageTypes
+        {
+            roundedCorners,
+            circle,
+            thumbnail,
+            none
+        }
+
         public static void AddName(TagBuilder tb, 
             string name, 
             string id)
