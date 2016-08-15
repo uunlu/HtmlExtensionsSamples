@@ -4,14 +4,15 @@
 <h4>Why To Use Html Extensions?</h4>
 <ul>
  Using modular and re-useable code always takes a lot of overhead over shoulders. By extending existing MVC Helper classes following benefits can be achieved: 
- <li> Simplify Html Code
+ <li> Simplify Html code and keep view cleaner.
  <li> Combine several lines of Html in a single Helper
  <li> Create clean code on view
 </ul>
 
+<p>In this sample, Asp.NET project, there are some Html Extension helper classes and methods created. </p>
 ---------------------------
 <h4>-> Go to Components Folder</h4>
-You can see Html Helper method samples in this folder. 
+You can see Html Helper method samples under "Components" folder. 
 
 <h4>-> HtmlExtensionsImage: </h4>
 
